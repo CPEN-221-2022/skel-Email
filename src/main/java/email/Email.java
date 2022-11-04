@@ -153,4 +153,10 @@ public class Email implements Cloneable, TimestampedObject {
     public Email clone() throws CloneNotSupportedException {
         return (Email) super.clone();
     }
+
+    @Override
+    public String toString() {
+        return this.msgId.toString() + " | " + this.sender + " | "
+                + this.recipient + " | " + this.subject + " | " + this.body;
+    }
 }
