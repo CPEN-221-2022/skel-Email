@@ -56,7 +56,7 @@ public class MailBox {
     }
 
     /**
-     * Mark the message with the given id as read
+     * Mark the message with the given id as unread
      *
      * @param msgID the id of the message to mark as unread, is not null
      * @return true if the message exists in the mailbox and false otherwise

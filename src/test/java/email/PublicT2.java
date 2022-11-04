@@ -108,7 +108,7 @@ public class PublicT2 {
         inbox.addMsg(m1);
         Email m2 = new Email(11, user1, user2, "Some subject", "Some text");
         inbox.addMsg(m2);
-        List<Email> exp = Arrays.asList(m2, m1);
+        List<Email> exp = Arrays.asList(m1, m2);
         assertEquals(exp, inbox.getTimestampView());
     }
 
