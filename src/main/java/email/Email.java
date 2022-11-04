@@ -42,7 +42,7 @@ public class Email implements Cloneable, TimestampedObject {
      * @param responseTo is not null
      */
     public Email(int timestamp, String sender, String recipient, String subject, String body, UUID responseTo) {
-        msgId           = UUID.randomUUID();
+        this.msgId      = UUID.randomUUID();
         this.timestamp  = timestamp;
         this.sender     = sender;
         this.recipient  = recipient;
@@ -151,7 +151,6 @@ public class Email implements Cloneable, TimestampedObject {
 
     @Override
     public Email clone() throws CloneNotSupportedException {
-        Email retVal = (Email) super.clone();
-        return retVal;
+        return (Email) super.clone();
     }
 }
