@@ -116,6 +116,31 @@ public class MailBox {
         return null;
     }
 
+
+    /**
+     * Mark all the messages in the thread contain the message
+     * with the given id as read
+     * @param msdID the id of the thread representative
+     * @return true if a message with that id is in this mailbox
+     * and false otherwise
+     */
+    public boolean markThreadAsRead(UUID msdID) {
+        // TODO: Implement this method
+        return false;
+    }
+
+    /**
+     * Mark all the messages in the thread contain the message
+     * with the given id as unread
+     * @param msdID the id of the thread representative
+     * @return true if a message with that id is in this mailbox
+     * and false otherwise
+     */
+    public boolean markThreadAsUnread(UUID msdID) {
+        // TODO: Implement this method
+        return false;
+    }
+
     /**
      * Obtain a list of messages, organized by message threads.
      * <p>
