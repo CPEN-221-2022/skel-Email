@@ -84,6 +84,7 @@ public class PublicT3 {
         }
 
         inbox.markThreadAsUnread(thread1_3.getId());
+        assertEquals(5, inbox.getUnreadMsgCount());
         List<Email> thread1 = Arrays.asList(thread1_4, thread1_3, thread1_2, thread1_1, thread1_0);
         for (Email email: thread1) {
             assertFalse(inbox.isRead(email.getId()));
