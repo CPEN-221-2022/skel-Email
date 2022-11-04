@@ -130,9 +130,9 @@ public class MailBox {
 
 
     /**
-     * Mark all the messages in the thread contain the message
+     * Mark all the messages in the same thread as the message
      * with the given id as read
-     * @param msgID the id of the thread representative
+     * @param msgID the id of a message whose entire thread is to be marked as read
      * @return true if a message with that id is in this mailbox
      * and false otherwise
      */
@@ -142,9 +142,9 @@ public class MailBox {
     }
 
     /**
-     * Mark all the messages in the thread contain the message
+     * Mark all the messages in the same thread as the message
      * with the given id as unread
-     * @param msgID the id of the thread representative
+     * @param msgID the id of a message whose entire thread is to be marked as unread
      * @return true if a message with that id is in this mailbox
      * and false otherwise
      */
