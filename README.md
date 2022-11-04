@@ -40,6 +40,8 @@ We define two emails, `m1` and `m2`, to be part of the same email thread if:
 
 Clearly the definition above holds if we swap `m1` and `m2`. A message created fresh (not a response to another email) is considered to be a separate thread that may or may not grow.
 
+**Once a thread has been created/identified, deleting some messages from the thread should not invalidate the thread relationship between the other messages of the thread.**
+
 **Examples of Email Threads**
 
 * `m1` is a new email message and it gets an id of `id1`. `m1` is in an email thread that contains only itself.
