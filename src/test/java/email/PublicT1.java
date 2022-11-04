@@ -84,6 +84,7 @@ public class PublicT1 {
         mb.markRead(m3.getId());
         assertEquals(1, mb.getUnreadMsgCount());
     }
+
     @Test
     public void testUnreadCount2() {
         MailBox mb = new MailBox();
@@ -98,5 +99,4 @@ public class PublicT1 {
         assertEquals(2, mb.getUnreadMsgCount());
         assertEquals(3, mb.getMsgCount());
     }
-
 }
