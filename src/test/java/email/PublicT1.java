@@ -94,7 +94,7 @@ public class PublicT1 {
         mb.markRead(m1.getId());
         mb.markRead(m3.getId());
         assertEquals(1, mb.getUnreadMsgCount());
-        mb.markUnread(m2.getId());
+        mb.markUnread(m1.getId());
         assertEquals(2, mb.getUnreadMsgCount());
         assertEquals(3, mb.getMsgCount());
     }
