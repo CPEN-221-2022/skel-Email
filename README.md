@@ -38,7 +38,7 @@ We define two emails, `m1` and `m2`, to be part of the same email thread if:
 * `m2` is a direct response to `m1`, 
 * or `m2` was written in response to any message that is part of the same thread as `m1`.
 
-Clearly the definition above holds if we swap `m1` and `m2`. A message created fresh (not a response to another email) is considered to be a separate thread that may or may not grow.
+Clearly the definition above holds if we swap `m1` and `m2`. A message created fresh (not a response to another email) is considered to be a separate thread that may or may not grow. New messages (not in response to another message) have their `responseTo` field set to a special value (see the provided source code).
 
 **Once a thread has been created/identified, deleting some messages from the thread should not invalidate the thread relationship between the other messages of the thread.**
 
