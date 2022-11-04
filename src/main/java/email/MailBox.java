@@ -105,7 +105,7 @@ public class MailBox {
      *
      * @return a list that represents a view of the mailbox with messages sorted
      * by timestamp, with most recent message first. If multiple messages have
-     * the same timestamp, the ordering among those messages is arbitary.
+     * the same timestamp, the ordering among those messages is arbitrary.
      */
     public List<Email> getTimestampView() {
         // TODO: Implement this method
@@ -160,7 +160,7 @@ public class MailBox {
      * that has the most recent activity (based on timestamps of messages in the
      * thread) first, and within a thread more recent messages appear first.
      * If multiple emails within a thread have the same timestamp then the
-     * ordering among those messages is arbitary. Similarly, if more than one
+     * ordering among those messages is arbitrary. Similarly, if more than one
      * thread can be considered "most recent", those threads can be ordered
      * arbitrarily.
      * <p>
