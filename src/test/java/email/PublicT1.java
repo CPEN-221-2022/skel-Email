@@ -3,8 +3,7 @@ package email;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PublicT1 {
 
@@ -37,6 +36,22 @@ public class PublicT1 {
         mb.addMsg(m5);
         assertEquals(5, mb.getMsgCount());
     }
+
+    @Test
+    public void testGetMsg1() {
+        MailBox mb = new MailBox();
+        mb.addMsg(m1);
+        mb.addMsg(m2);
+        assertEquals(m1, mb.getMsg(m1.getId()));
+    }
+
+    @Test
+    public void testGetMsg2() {
+        MailBox mb = new MailBox();
+        mb.addMsg(m1);
+        assertTrue(mb.getMsg(m2.getId()) == null);
+    }
+
 
     @Test
     public void testAdd2() {

@@ -22,6 +22,18 @@ public class MailBox {
         return false;
     }
 
+
+    /**
+     * Return the email with the provided id
+     * @param msgID the id of the email to retrieve, is not null
+     * @return the email with the provided id
+     * and null if such an email does not exist in this mailbox
+     */
+    public Email getMsg(UUID msgID) {
+        // TODO: Implement this method
+        throw new UnsupportedOperationException(); // You should change this!
+    }
+
     /**
      * Delete a message from the mailbox
      *
