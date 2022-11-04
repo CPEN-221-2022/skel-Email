@@ -6,10 +6,10 @@ An email message can be represented as a datatype that encapsulates information 
 * message id: a **unique** identifier for the message
 * sender: text that represents the sender of the email
 * receiver: text that represents receiver of the email
-* timestamp: a positive integer that allows us to sequence/order email
+* timestamp: one positive integer that indicates the time at which the email was sent and received; used to sequence/order emails.
 * subject: text representing the email's subject
 * body: text that forms the email body
-* response-to id: the identifier of the email that an email is written in response to. (Newly generated email will use a special identifier to indicate that there is no prior email.)
+* response-to id: the message id of the email that this email is written is response to, or a special message id (see NO_PARENT_ID in Email.java) if this email is not in response to any other email.
 
 You have been provided with the implementation of the email datatype (in `email.Email`). `Email` is an immutable type. You should **not change** the provided implementation of `Email`. Also, two instances of `Email`, `m1` and `m2` are duplicates of each other if `m1.equals(m2)` is true.
 
