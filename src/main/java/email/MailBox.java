@@ -120,11 +120,11 @@ public class MailBox {
     /**
      * Mark all the messages in the thread contain the message
      * with the given id as read
-     * @param msdID the id of the thread representative
+     * @param msgID the id of the thread representative
      * @return true if a message with that id is in this mailbox
      * and false otherwise
      */
-    public boolean markThreadAsRead(UUID msdID) {
+    public boolean markThreadAsRead(UUID msgID) {
         // TODO: Implement this method
         return false;
     }
@@ -132,11 +132,11 @@ public class MailBox {
     /**
      * Mark all the messages in the thread contain the message
      * with the given id as unread
-     * @param msdID the id of the thread representative
+     * @param msgID the id of the thread representative
      * @return true if a message with that id is in this mailbox
      * and false otherwise
      */
-    public boolean markThreadAsUnread(UUID msdID) {
+    public boolean markThreadAsUnread(UUID msgID) {
         // TODO: Implement this method
         return false;
     }

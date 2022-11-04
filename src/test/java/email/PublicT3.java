@@ -90,5 +90,4 @@ public class PublicT3 {
             assertFalse(inbox.isRead(email.getId()));
         }
     }
-
 }
