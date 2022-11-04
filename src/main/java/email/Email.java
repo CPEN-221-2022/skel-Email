@@ -137,7 +137,7 @@ public class Email implements Cloneable, TimestampedObject {
         if (this == o) {
             return true;
         }
-        if (o == null || getClass() != o.getClass()) {
+        if (o == null || this.getClass() != o.getClass()) {
             return false;
         }
         Email email = (Email) o;
